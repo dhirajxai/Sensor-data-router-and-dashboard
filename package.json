@@ -1,0 +1,41 @@
+{
+  "name": "vehicle-telemetry-visualization",
+  "version": "0.1.0",
+  "description": "Production-grade vehicle telemetry visualization platform for fleet operators",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "npm -w frontend run dev",
+    "build": "npm -w frontend run build && npm -w backend run build",
+    "preview": "npm -w frontend run preview",
+    "test": "npm -w frontend run test && npm -w backend run test",
+    "test:watch": "npm -w frontend run test:watch",
+    "test:e2e": "playwright test",
+    "lint": "npm -w frontend run lint && npm -w backend run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,css,md}\"",
+    "type-check": "tsc --noEmit",
+    "install:all": "npm install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

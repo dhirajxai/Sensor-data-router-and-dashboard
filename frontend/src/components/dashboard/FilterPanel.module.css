@@ -1,0 +1,33 @@
+.panel {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.heading {
+  margin: 0 0 var(--spacing-md);
+  font-size: var(--font-size-lg);
+}
+
+.controlGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.controlGroup label {
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.controlGroup input,
+.controlGroup select {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.65rem 0.8rem;
+  background-color: #fff;
+  color: var(--color-text);
+}

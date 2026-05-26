@@ -1,0 +1,18 @@
+.appShell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg-secondary);
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+}
+
+.mainContent {
+  flex: 1;
+  min-height: calc(100vh - 96px);
+}

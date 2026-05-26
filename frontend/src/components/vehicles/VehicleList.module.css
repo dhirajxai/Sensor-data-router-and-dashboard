@@ -1,0 +1,148 @@
+.container {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.headerRow h2 {
+  margin: 0;
+}
+
+.kicker {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.countBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background-color: rgba(37, 99, 235, 0.08);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+}
+
+.vehicleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.vehicleCard {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.9), rgba(255, 255, 255, 1));
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.vehicleCard:hover {
+  border-color: var(--color-primary);
+}
+
+.vehicleTitle {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.vehicleTitle h3 {
+  margin: 0;
+  font-size: var(--font-size-lg);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  background-color: rgba(22, 163, 74, 0.12);
+  color: var(--color-success);
+}
+
+.badgeOffline {
+  background-color: rgba(220, 38, 38, 0.12);
+  color: var(--color-danger);
+}
+
+.badgeInactive {
+  background-color: rgba(234, 88, 12, 0.12);
+  color: var(--color-warning);
+}
+
+.metaLine {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.metricRow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-sm);
+}
+
+.metricBlock {
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm);
+}
+
+.metricLabel {
+  display: block;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+.metricValue {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.detailButton {
+  margin-top: auto;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: rgba(37, 99, 235, 0.08);
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+}
+
+.detailButton:hover {
+  background-color: rgba(37, 99, 235, 0.14);
+}
+
+.emptyState {
+  padding: var(--spacing-lg);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  color: var(--color-text-secondary);
+}
